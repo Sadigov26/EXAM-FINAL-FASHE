@@ -1,0 +1,57 @@
+.hero {
+    background-image: url("../../About/master-slid.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heroContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+
+        h3 {
+            font-size: 22px;
+            color: white;
+            font-weight: 300
+        }
+
+        h1 {
+            font-size: 80px;
+            color: white;
+
+
+        }
+
+        button {
+            padding: 15px 30px;
+            border-radius: 100px;
+            border: none;
+            transition: 0.5s;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+            }
+
+            &:hover {
+                background-color: #E65540;
+                color: white;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+@media screen and (min-width:300px) and (max-width:991px) {
+.hero{
+    max-width: 100%;
+}
+
+}

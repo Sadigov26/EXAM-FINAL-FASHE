@@ -1,0 +1,101 @@
+.banner {
+    width: 100%;
+    padding: 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bannerContainer {
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bannerContainerLeft {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .bannerContainerRight {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .RightTop {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+
+
+                .imagesDrop {
+                    position: absolute;
+                    left: 1px;
+                }
+
+                p {
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: orangered;
+                        transition: 0.5s;
+                    }
+                }
+
+                .bannerPrice {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        color: orangered;
+                    }
+                }
+
+                img {
+                    position: relative;
+                    width: 65%;
+                    height: auto;
+                }
+
+
+
+            }
+
+            .RightBottom {
+                display: flex;
+                gap: 10px;
+
+                .RightBottomNumber {
+                    border: 1px solid rgb(199, 196, 196);
+                    padding: 10px;
+                    margin-right: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .bannerContainer {
+            flex-direction: column;
+            align-items: center;
+
+            .bannerContainerLeft,
+            .bannerContainerRight {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

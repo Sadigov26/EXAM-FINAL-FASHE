@@ -1,0 +1,112 @@
+.Dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dashboardContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        gap: 40px;
+        width: 100%;
+
+        .dashboardContainerTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-direction: column;
+            width: 100%;
+
+            form {
+                border: 1px solid gray;
+                padding: 10px;
+                width: 30%;
+                display: flex;
+                gap: 10px;
+
+                .inputDashboard {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    input {
+                        border-radius: 100px;
+                        border: 1px solid gray;
+                        height: 25px;
+                        display: flex;
+                    }
+
+
+                }
+
+                button {
+                    transition: 0.5s;
+                    border-radius: 100px;
+                    border: 1px solid gray;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                        transition: 0.5s;
+                    }
+                }
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+
+        }
+
+        .dashboardContainerBottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            gap: 20px;
+
+            .dashboardCards {
+                display: flex;
+                border: 1px solid rgb(199, 197, 197);
+                justify-content: space-around;
+                align-items: center;
+                width: 60%;
+                flex-wrap: wrap;
+                padding: 10px;
+                text-align: center;
+                height: 140px;
+                cursor: pointer;
+
+                img {
+                    width: 100px;
+                }
+
+                &:hover {
+                    button {
+                        background-color: black;
+                        color: white;
+                        transition: 0.5s;
+                    }
+                }
+
+                h3 {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+
+
+                button {
+                    cursor: pointer;
+                    padding: 7px 20px;
+                    border-radius: 100px;
+                    border: 1px solid gray;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
